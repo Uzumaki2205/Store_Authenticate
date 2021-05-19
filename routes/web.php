@@ -27,4 +27,6 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('login', 'Auth\AdminLoginController@showLogin');
     Route::post('login', 'Auth\AdminLoginController@login');
     Route::get('index', 'AdminController@dashboard');
+
+    Route::get('users', 'AdminController@getAllUser');
 });
